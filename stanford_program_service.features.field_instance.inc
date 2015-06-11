@@ -106,7 +106,7 @@ function stanford_program_service_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
-        'weight' => 3,
+        'weight' => 2,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -144,6 +144,165 @@ function stanford_program_service_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-stanford_program_service-field_related_content'
+  $field_instances['node-stanford_program_service-field_related_content'] = array(
+    'bundle' => 'stanford_program_service',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Choose the appropriate Related Content tag(s).',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 8,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 13,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_related_content',
+    'label' => 'Related Content',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'node-stanford_program_service-field_s_content_notes'
+  $field_instances['node-stanford_program_service-field_s_content_notes'] = array(
+    'bundle' => 'stanford_program_service',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Enter notes regarding the state of this content.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 6,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 16,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_s_content_notes',
+    'label' => 'Content Notes',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'content_editor_text_format' => 'content_editor_text_format',
+          'filtered_html' => 'filtered_html',
+          'full_html' => 'full_html',
+          'plain_text' => 'plain_text',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'content_editor_text_format' => array(
+              'weight' => -10,
+            ),
+            'filtered_html' => array(
+              'weight' => 0,
+            ),
+            'full_html' => array(
+              'weight' => 1,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+          ),
+        ),
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 11,
+    ),
+  );
+
+  // Exported field_instance: 'node-stanford_program_service-field_s_content_status'
+  $field_instances['node-stanford_program_service-field_s_content_status'] = array(
+    'bundle' => 'stanford_program_service',
+    'default_value' => array(
+      0 => array(
+        'value' => 3,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'This tracks the status of your content. Note: This information will not be displayed on your public-facing website. Ex. Placeholder Content, Ready for Review',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 9,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 14,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_s_content_status',
+    'label' => 'Content Status',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 10,
+    ),
+  );
+
   // Exported field_instance: 'node-stanford_program_service-field_s_landing_page_layout'
   $field_instances['node-stanford_program_service-field_s_landing_page_layout'] = array(
     'bundle' => 'stanford_program_service',
@@ -155,13 +314,13 @@ function stanford_program_service_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 4,
+        'weight' => 7,
       ),
       'full' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 14,
+        'weight' => 19,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -198,7 +357,7 @@ function stanford_program_service_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 7,
+        'weight' => 5,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -273,13 +432,13 @@ function stanford_program_service_field_default_field_instances() {
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 6,
+        'weight' => 4,
       ),
       'full' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 13,
+        'weight' => 18,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -314,7 +473,7 @@ function stanford_program_service_field_default_field_instances() {
         'insert_styles' => array(
           'auto' => 'auto',
           'icon_link' => 0,
-          'image' => 0,
+          'image' => 'image',
           'image_3-col-header' => 0,
           'image_4-col-header' => 0,
           'image_6-col-banner' => 0,
@@ -324,30 +483,36 @@ function stanford_program_service_field_default_field_instances() {
           'image_8-col-banner' => 0,
           'image_8-col-banner-short' => 0,
           'image_8-col-banner-tall' => 0,
-          'image_9-col-banner' => 0,
+          'image_9-col-banner' => 'image_9-col-banner',
           'image_9-col-banner-short' => 0,
           'image_12-col-banner' => 0,
           'image_12-col-banner-tall' => 0,
+          'image_caw-6-col-banner' => 0,
+          'image_caw-9-col-banner-tall' => 0,
           'image_caw-banner' => 0,
+          'image_caw-landscape-xlarge' => 0,
+          'image_caw-large-landscape' => 0,
+          'image_caw-med-landscape' => 0,
+          'image_caw-sm-landscape' => 0,
           'image_icon-profile' => 0,
           'image_icon-square' => 0,
           'image_large' => 0,
           'image_large-landscape' => 0,
-          'image_large-landscape-scaled' => 'image_large-landscape-scaled',
+          'image_large-landscape-scaled' => 0,
           'image_large-profile' => 0,
-          'image_large-profile-scaled' => 'image_large-profile-scaled',
-          'image_large-scaled' => 0,
-          'image_large-square' => 0,
+          'image_large-profile-scaled' => 0,
+          'image_large-scaled' => 'image_large-scaled',
+          'image_large-square' => 'image_large-square',
           'image_med-landscape' => 0,
-          'image_med-landscape-scaled' => 'image_med-landscape-scaled',
+          'image_med-landscape-scaled' => 0,
           'image_med-profile' => 0,
-          'image_med-profile-scaled' => 'image_med-profile-scaled',
-          'image_med-square' => 0,
+          'image_med-profile-scaled' => 0,
+          'image_med-square' => 'image_med-square',
           'image_medium' => 0,
           'image_page-width' => 'image_page-width',
           'image_sm-landscape' => 0,
           'image_sm-profile' => 0,
-          'image_sm-square' => 0,
+          'image_sm-square' => 'image_sm-square',
           'image_thmb-landscape' => 0,
           'image_thmb-profile' => 0,
           'image_thmb-square' => 0,
@@ -370,20 +535,16 @@ function stanford_program_service_field_default_field_instances() {
     'description' => 'Main image that represents this Program/Service',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
-        'weight' => 5,
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
       ),
       'full' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 12,
+        'weight' => 17,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -483,9 +644,10 @@ function stanford_program_service_field_default_field_instances() {
       ),
       'full' => array(
         'label' => 'hidden',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 11,
+        'type' => 'text_default',
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -539,20 +701,69 @@ function stanford_program_service_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-stanford_program_service-field_stanford_subsite_sub_tags'
+  $field_instances['node-stanford_program_service-field_stanford_subsite_sub_tags'] = array(
+    'bundle' => 'stanford_program_service',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Enter the value of the subsite.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 10,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 15,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_stanford_subsite_sub_tags',
+    'label' => 'Subsite Tags',
+    'required' => FALSE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'options',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'options_select',
+      'weight' => 15,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Additional Details');
   t('Banner Image');
+  t('Choose the appropriate Related Content tag(s).');
+  t('Content Notes');
+  t('Content Status');
   t('Description');
+  t('Enter notes regarding the state of this content.');
   t('Enter the value of the subsite.');
   t('Image Insert');
   t('Introductory text describing this Program/Service');
   t('Layout');
   t('Main image that represents this Program/Service');
   t('Program/Service Item');
+  t('Related Content');
   t('Subsite Tags');
   t('Subtitle');
   t('Subtitle text for this Program/Service');
+  t('This tracks the status of your content. Note: This information will not be displayed on your public-facing website. Ex. Placeholder Content, Ready for Review');
 
   return $field_instances;
 }

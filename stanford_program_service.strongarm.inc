@@ -50,16 +50,16 @@ function stanford_program_service_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '10',
+          'weight' => '14',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '9',
+          'weight' => '13',
         ),
         'redirect' => array(
-          'weight' => '8',
+          'weight' => '12',
         ),
       ),
       'display' => array(),
@@ -73,6 +73,28 @@ function stanford_program_service_strongarm() {
   $strongarm->name = 'menu_options_stanford_program_service';
   $strongarm->value = array(
     0 => 'main-menu',
+    1 => 'testing-sub-site-name',
+    2 => 'benefits--rewards',
+    3 => 'benefits--rewards',
+    4 => 'learn--grow',
+    5 => 'manage--lead',
+    6 => 'one',
+    7 => 'two',
+    8 => 'one',
+    9 => 'one',
+    10 => 'one',
+    11 => 'benefits--rewards',
+    12 => 'learn--grow',
+    13 => 'welcome-center',
+    14 => 'learn--grow',
+    15 => 'benefits--rwards',
+    16 => 'two',
+    17 => 'manage--lead',
+    18 => 'learn--grow',
+    19 => 'learn--grow',
+    20 => 'welcome-center',
+    21 => 'faculty-staff-help-center',
+    22 => 'test-subsite-two-lines',
   );
   $export['menu_options_stanford_program_service'] = $strongarm;
 
